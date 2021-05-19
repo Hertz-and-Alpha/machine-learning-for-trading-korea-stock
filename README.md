@@ -1,5 +1,6 @@
 # ML for Trading - 2<sup>nd</sup> Edition
 # 머신러닝 딥러닝 알고리즘 트레이딩 2판 국내주식으로 변경
+## 궁금하거나 제안할 사항이 있으면 dudals3844@gmail.com으로 컨택 바랍니다.
 This [book](https://www.amazon.com/Machine-Learning-Algorithmic-Trading-alternative/dp/1839217715?pf_rd_r=GZH2XZ35GB3BET09PCCA&pf_rd_p=c5b6893a-24f2-4a59-9d4b-aff5065c90ec&pd_rd_r=91a679c7-f069-4a6e-bdbb-a2b3f548f0c8&pd_rd_w=2B0Q0&pd_rd_wg=GMY5S&ref_=pd_gw_ci_mcx_mr_hp_d) aims to show how ML can add value to algorithmic trading strategies in a practical yet comprehensive way. It covers a broad range of ML techniques from linear regression to deep reinforcement learning and demonstrates how to build, backtest, and evaluate a trading strategy driven by model predictions.  
 
 In four parts with **23 chapters plus an appendix**, it covers on **over 800 pages**:
