@@ -1,6 +1,7 @@
-# Installation instructions
+# 설치 준비사항
+> 2021 4월 25일에 새로운 zipline 버전 업데이트: The [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) 도커 사용없이 원도우, 맥, 리눅스 다 설치해서 사용가능
+> 기존에 퀀토피안에서 포기했던 zipline을 stefan jansen이 최근 파이썬 환경에서도 돌아가게 수정 해놓은 버전
 
-> Update April 25, 2021: The [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) permits running the backtest notebooks without Docker on all operating systems; the installation instructions now refer to Windows/MacOS/Linux environment files.  
 
 > Update March 14, 2021: I have just released a [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) that runs on Python 3.7-3.9; see [release info](https://github.com/stefan-jansen/zipline-reloaded/releases/tag/2.0.0rc4) and [docs](https://zipline.ml4trading.io/). As a result, the Docker solution will no longer be necessary going forward and I will provide new environment files over the course of April.
 
@@ -10,7 +11,7 @@
 > To update the Docker image to the latest version, run:
 > ```docker pull appliedai/packt:latest```
 
-This book uses Python 3.8 and various ML- and trading-related libraries that can be installed:
+이 책은 파이썬 3.8 버전을 사용하고 거래와 관련된 libraries를 설치 할 수 있다.
 
 1. Using [mamba](https://github.com/mamba-org/mamba) in [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) based on the [Miniconda](https://docs.conda.io/en/latest/miniconda.html) distribution and the provided `ml4t.yml` environment files,
 2. For macOS and Linux only: via [pip](https://pip.pypa.io/en/stable/) in a Python virtual environment created with, e.g., [pyenv](https://github.com/pyenv/pyenv) or [venv](https://docs.python.org/3/tutorial/venv.html) using the provided `ml4t.txt` requirement files.
@@ -18,7 +19,7 @@ This book uses Python 3.8 and various ML- and trading-related libraries that can
 
 We'll describe how to obtain the source code and then lay out the first two options in turn. Then, we address how to work with [Jupyter](https://jupyter.org/) notebooks to view and execute the code examples. Finally, we list the legacy Docker installation instructions.
 
-## Sourcing the code samples
+## 원래 책의 코드를 밑에서 다운받을수 있다.
 
 You can work with the code samples by downloading a compressed version of the [GitHub repository](https://github.com/stefan-jansen/machine-learning-for-trading), or by [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) its content. The latter will result in a larger download because it includes the commit history. 
 
@@ -31,28 +32,31 @@ To work with the code locally, do the following:
     - If you cloned the repo and did not rename it, the root directory will be called `machine-learning-for-trading`, the ZIP the version will unzip to `machine-learning-for-trading-master`.
 
    
-## How to install the required libraries using `conda` environments
+## 아나콘다를 설치하는 방법 `conda` 
 
-The instructions rely on Anaconda's [miniconda](https://docs.conda.io/en/latest/miniconda.html) distribution, the [mamba](https://github.com/mamba-org/mamba) package manager to facilitate dependency management, and OS-specific environment files at `installation/[windows|macos|linux]/ml4t.yml` with pinned library versions. 
+명령어는 아나콘다로 실행 시켜야 된다. [miniconda](https://docs.conda.io/en/latest/miniconda.html) ,  [mamba](https://github.com/mamba-org/mamba) mamba를 이용해서 의존성 관리를 편하게 해주고 OS에 따라서 옆에 경로에 있는 파일을 `installation/[windows|macos|linux]/ml4t.yml` 설치해주면 된다. 
 
 Alternatively, there is also an environment file `installation/ml4t-base.yml` that only contains a list of the required libraries without dependencies; if you use this file instead you will obtain the latest versions - just be aware that at some point more recent software may become incompatible with the examples.
 
 You could also just install the packages required for the notebooks you are interested in; the most recent versions (as of March 2021) should work.
 
-### Install miniconda
+### 미니콘다 설치
 
 The notebooks rely on a single virtual environment based on [miniconda3](https://docs.conda.io/en/latest/miniconda.html) that you need to install first. 
 
 You can find detailed instructions for various operating systems [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-### Create a conda environment from an environment file
+아나콘다 설치를 알려주는 한국 사이트도 첨부합니다. [here](https://bioinformaticsandme.tistory.com/153)
+### 가상환경 파일을 이용해서 아나콘다 가상환경을 만들어 준다.
 
-[conda] is the package manager provided by the [Anaconda](https://www.anaconda.com/) python distribution. Unfortunately, it is currently [not in very good shape](https://github.com/conda/conda/issues/9707). Instead, we'll use the more recent and much faster [mamba](https://github.com/mamba-org/mamba) package manager to install packages. You can install it using:
+[conda] is the package manager provided by the [Anaconda](https://www.anaconda.com/) python distribution. Unfortunately, it is currently [not in very good shape](https://github.com/conda/conda/issues/9707). mamba를 이용하면 더 빠르게 새로운 가상환경 설정 가능 [mamba](https://github.com/mamba-org/mamba) 아나콘다 prompt에서 아래 명령어 실행
 ```python
 conda install -n base -c conda-forge mamba
 ```
 
 To create a [virtual environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) with the latest versions of the libraries used in the notebooks (as of April 2021), you just need to run one of the following options (depending on your operating system) from the command line in the root directory of the cloned repo:
+
+운영체계에 따라서 아래중에 하나의 명령어를 실행시키면 됨
 
 ```bash
 mamba env create -f installation/windows/ml4t.yml 
@@ -62,21 +66,21 @@ mamba env create -f installation/linux/ml4t.yml
 
 See also [here](https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307) for a more detailed tutorial on virtual environments.
 
-If you want to create a new environment with the latest library versions as of whenever you read this, run
+만약 최신 버전 패키지로 된 가상환경을 생성하고 싶으면 아래 명령어를 실행
 
 ```bash
 conda env create -f installation/ml4t-base.yml
 ```
 
-### Activate conda environment
+### 아나콘다 가상환경 실행
 
-After you've create it, you can activate the environment using its name, which in our case is `ml4t`:
+`ml4t`라는 이름의 가상환경을 실행:
 
 ```bash
 conda activate ml4t
 ```
 
-To deactivate, simply use
+가상환경을 끌때 
 
 ```bash
 conda deactivate
