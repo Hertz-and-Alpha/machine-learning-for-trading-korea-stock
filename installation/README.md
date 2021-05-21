@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Installation instructions
 
 > Update April 25, 2021: The [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) permits running the backtest notebooks without Docker on all operating systems; the installation instructions now refer to Windows/MacOS/Linux environment files.  
@@ -7,7 +7,6 @@
 > 2021 4월 25일에 새로운 zipline 버전 업데이트: The [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) 도커 사용없이 원도우, 맥, 리눅스 다 설치해서 사용가능
 > 기존에 퀀토피안에서 포기했던 zipline을 stefan jansen이 최근 파이썬 환경에서도 돌아가게 수정 해놓은 버전
 
->>>>>>> c4788d01681ff546efcb0b6fb58696dbfa0fb098
 
 > Update March 14, 2021: I have just released a [new Zipline version](https://github.com/stefan-jansen/zipline-reloaded) that runs on Python 3.7-3.9; see [release info](https://github.com/stefan-jansen/zipline-reloaded/releases/tag/2.0.0rc4) and [docs](https://zipline.ml4trading.io/). As a result, the Docker solution will no longer be necessary going forward and I will provide new environment files over the course of April.
 
