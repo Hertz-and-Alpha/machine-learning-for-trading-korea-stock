@@ -326,3 +326,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,windows,linux,macos,python
 *.h5
 .idea/
+data/marcap/*
