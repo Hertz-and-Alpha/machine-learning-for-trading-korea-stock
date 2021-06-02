@@ -1,4 +1,4 @@
-# 02 API access to market data
+# 02 API를 이용해서 주식 관련 데이터 이용
 
 There are several options to access market data via API using Python.
 
@@ -8,9 +8,9 @@ The notebook [01_pandas_datareader_demo](01_pandas_datareader_demo.ipynb) presen
 - The `pandas` library enables access to data displayed on websites using the read_html function 
 - the related `pandas-datareader` library provides access to the API endpoints of various data providers through a standard interface 
 
-## yfinance: Yahoo! Finance market and fundamental data 
+## Finance DataReader
 
-The notebook [yfinance_demo](02_yfinance_demo.ipynb) shows how to use yfinance to download a variety of data from Yahoo! Finance. The library works around the deprecation of the historical data API by scraping data from the website in a reliable, efficient way with a Pythonic API.
+The notebook [yfinance_demo](02_finance_datareader_demo.ipynb) shows how to use yfinance to download a variety of data from Yahoo! Finance. The library works around the deprecation of the historical data API by scraping data from the website in a reliable, efficient way with a Pythonic API.
 
 ## LOBSTER tick data
 
