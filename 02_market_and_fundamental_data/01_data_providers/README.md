@@ -10,7 +10,7 @@ The notebook [01_pandas_datareader_demo](01_pandas_datareader_demo.ipynb) presen
 
 ## Finance DataReader
 
-The notebook [yfinance_demo](02_finance_datareader_demo.ipynb) shows how to use yfinance to download a variety of data from Yahoo! Finance. The library works around the deprecation of the historical data API by scraping data from the website in a reliable, efficient way with a Pythonic API.
+The notebook [finance datareader_demo](02_finance_datareader_demo.ipynb) shows how to use yfinance to download a variety of data from Yahoo! Finance. The library works around the deprecation of the historical data API by scraping data from the website in a reliable, efficient way with a Pythonic API.
 
 ## LOBSTER tick data
 
