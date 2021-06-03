@@ -1,4 +1,4 @@
-# Financial Feature Engineering: How to research Alpha Factors
+# Financial Feature Engineering: 알파 요소들 리서치 
 
 Algorithmic trading strategies are driven by signals that indicate when to buy or sell assets to generate superior returns relative to a benchmark such as an index. The portion of an asset's return that is not explained by exposure to this benchmark is called alpha, and hence the signals that aim to produce such uncorrelated returns are also called alpha factors.
 
