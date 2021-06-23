@@ -1,4 +1,4 @@
-# Random Forests - A Long-Short Strategy for Japanese Stocks
+# Random Forests - A Long-Short Strategy for Korea Stocks
 
 In this chapter, we will learn how to use two new classes of machine learning models for trading: decision trees and random forests. We will see how decision trees learn rules from data that encode non-linear relationships between the input and the output variables. We will illustrate how to train a decision tree and use it for prediction for regression and classification problems such as asset returns and price moves. We will also visualize and interpret the rules learned by the model, and tune the model's hyperparameters to optimize the bias-variance tradeoff and prevent overfitting. 
 
@@ -6,7 +6,7 @@ Decision trees are not only important standalone models but are also frequently 
 
 We will illustrate bootstrap aggregation, often called bagging, as one of several methods to randomize the construction of individual models and reduce the correlation of the prediction errors made by an ensemble's components. We will illustrate how bagging effectively reduces the variance, and learn how to configure, train, and tune random forests. We will see how random forests as an ensemble of a large number of decision trees, can dramatically reduce prediction errors, at the expense of some loss in interpretation. 
 
-Then we will proceed and build a long-short trading strategy that uses a Random Forest ensemble to generate profitable signals for large-cap Japanese equities over the last three years. We will source and prepare the stock price data, tune the hyperparameters of a Random Forest model, and backtest trading rules based on the models’ signals. The resulting long-short strategy uses machine learning rather than the cointegration relationship we saw in Chapter 9 on Time Series models to identify and trade baskets of securities whose prices will likely move in opposite directions over a given investment horizon.
+Then we will proceed and build a long-short trading strategy that uses a Random Forest ensemble to generate profitable signals for large-cap Korea equities over the last three years. We will source and prepare the stock price data, tune the hyperparameters of a Random Forest model, and backtest trading rules based on the models’ signals. The resulting long-short strategy uses machine learning rather than the cointegration relationship we saw in Chapter 9 on Time Series models to identify and trade baskets of securities whose prices will likely move in opposite directions over a given investment horizon.
 
 ## Content
 
@@ -22,7 +22,7 @@ Then we will proceed and build a long-short trading strategy that uses a Random 
     * [Why ensemble models perform better](#why-ensemble-models-perform-better)
     * [Code Example: How bagging lowers model variance](#code-example-how-bagging-lowers-model-variance)
     * [Code Example: How to train and tune a random forest](#code-example-how-to-train-and-tune-a-random-forest)
-4. [Code Example: Long-short signals for Japanese stocks with LightGBM](#code-example-long-short-signals-for-japanese-stocks-with-lightgbm)
+4. [Code Example: Long-short signals for Korea stocks with LightGBM](#code-example-long-short-signals-for-korea-stocks-with-lightgbm)
     * [Custom Zipline Bundle](#custom-zipline-bundle)
     * [Feature Engineering](#feature-engineering)
     * [LightGBM Random Forest Model Tuning](#lightgbm-random-forest-model-tuning)
